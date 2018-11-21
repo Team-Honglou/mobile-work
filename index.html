@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动办公</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+        <!-- topHeader -->
+        <!-- data-fullscreen="true"全屏隐藏，点击显示 -->
+        <!-- ui-btn-icon-notext 不显示文字 -->
+        <div data-role="header" data-position="fixed">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+            <h1>欢迎访问我的主页</h1>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">搜索</a>
+            <!-- <div data-role="navbar">
+                <ul>
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">第二页</a></li>
+                    <li><a href="#">搜索</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <!-- topHeader -->
+
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-list">
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <!-- <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div>
+                <div class="list-item">ListItem</div> -->
+            </div>
+        </div>
+        <div data-role="panel" id="overlayPanel" data-display="overlay" data-position="right">
+            <h2>覆盖面板</h2>
+            <p>你可以使用按下 Esc 键、点击面板外部区域、通过滑动或点击下面按钮来关闭面板：</p>
+            <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-mini">关闭面板</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="center-wrapper">
+            <!-- <a href="#overlayPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-mini">侧滑</a> -->
+            <div class="ui-grid-a center-wrapper-item">
+                <div class="ui-block-a"><a href="#">与我相关</a></div>
+                <div class="ui-block-b"><a href="#">待办事项</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+</body>
+
+</html>
